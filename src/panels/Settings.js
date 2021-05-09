@@ -14,7 +14,7 @@ const Settings = props => (
 		</PanelHeader>
 		<Group>
             <FormItem top="Основные" >
-              	<Checkbox>Параметр 1</Checkbox>
+              	<Checkbox onClick={ () => alert("test")}>Параметр 1</Checkbox >
               	<Checkbox>Параметр 2</Checkbox>
 			  	<Cell disabled after={<Switch defaultChecked />}>
                		<Div >Переключатель</Div>
