@@ -5,11 +5,10 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
-import Test from './panels/Persik';
+import Settings from './panels/Settings';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
-	const [fetchedUser, setUser] = useState(null);
 
 	useEffect(() => {
 		bridge.subscribe(({ detail: { type, data }}) => {
@@ -35,9 +34,9 @@ const App = () => {
 		<AdaptivityProvider>
 			<AppRoot>
 				<View activePanel={activePanel}>
-					<Home id='home' fetchedUser={fetchedUser} go={go} />
+					<Home id='home' go={go} />
 					<Persik id='persik' go={go} />
-					<Test id='test' go={go} />
+					<Settings id='settings' go={go} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>

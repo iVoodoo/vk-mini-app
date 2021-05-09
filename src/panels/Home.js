@@ -1,59 +1,73 @@
-import React, { useState, useEffect } from 'react';
-import bridge from '@vkontakte/vk-bridge';
+import React from 'react';
 import PropTypes from 'prop-types';
 import '@vkontakte/vkui/dist/vkui.css';
+import { Panel, PanelHeader, Group, ContentCard, CardGrid, PanelHeaderButton} from '@vkontakte/vkui';
+import { Icon28SettingsOutline } from '@vkontakte/icons';
 
-import { Panel, PanelHeader, Header, Button, Group, Cell, Div, ContentCard ,Avatar, CardGrid, Card } from '@vkontakte/vkui';
+const Home =  ({go}) => (
 
-const TEST_PANEL = 'test';
-
-const Home = ({ id, go, fetchedUser }) => (
-	<Panel id={id}>
-		<PanelHeader>vk-mini-app-dev</PanelHeader>
-		{fetchedUser &&
-		<Group header={<Header mode="secondary">User Data Fetched with VK Bridge</Header>}>
-			<Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
-			>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell>
-		</Group>}
-
-		<Group header={<Header mode="secondary">Test Small Header</Header>}>
-			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
-					Кнопка
-				</Button>
-			</Div>
-		</Group>
 		
-		<Group mode="plain" header={<Header mode="secondary">Карта ( на ней будем скорее всего показывать фотки)</Header>}>
-        <CardGrid size="l">
-          <ContentCard onClick={() => this.go(TEST_PANEL)}
-		  	image="https://www.vao-moscow.ru/wp-content/uploads/2017/01/UY1GE8lXJ1A.jpg"
-		  	subtitle="Тип/вид достопримечательности"
-			header="Имя достопримечательности"
-			caption="Здесь будет краткое описание арт-объекта."
+	<Panel id="home">
+		<PanelHeader style={{textAlign:'center'}}
+			left={<PanelHeaderButton onClick={go} data-to='settings'><Icon28SettingsOutline/></PanelHeaderButton>}
+		>
+			Список мест</PanelHeader>		
+		
+		<Group>
+        <CardGrid size="m">
+          <ContentCard 
+		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
+		  	subtitle="Type"
+			header="Name"
+			caption="Quick info"
+			id="1"
+		  >
+          </ContentCard>
+		  <ContentCard 
+		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
+		  	subtitle="Type"
+			header="Name"
+			caption="Quick info"
+			id="2"
+		  >
+            
+          </ContentCard>
+		  <ContentCard 
+		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
+		  	subtitle="Type"
+			header="Name"
+			caption="Quick info"
+			id="3"
+		  >
+            
+          </ContentCard>
+		  <ContentCard 
+		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
+		  	subtitle="Type"
+			header="Name"
+			caption="Quick info"
+			id="4"
+		  >
+            
+          </ContentCard>
+		  <ContentCard 
+		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
+		  	subtitle="Type"
+			header="Name"
+			caption="Quick info"
+			id="5"
 		  >
             
           </ContentCard>
         </CardGrid>
       </Group>
-	</Panel>
-);
 
+	</Panel>
+	
+)
 Home.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
-	fetchedUser: PropTypes.shape({
-		photo_200: PropTypes.string,
-		first_name: PropTypes.string,
-		last_name: PropTypes.string,
-		city: PropTypes.shape({
-			title: PropTypes.string,
-		}),
-	}),
 };
 
 export default Home;
