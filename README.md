@@ -13,7 +13,9 @@
 ## Ссылки
 
 [Сайт проекта](http://pd-2021-2.std-1452.ist.mospolytech.ru/)
+
 [Отчеты](https://github.com/k3k1488/vk-mini-app/tree/main/reports)
+
 [Документы](https://github.com/k3k1488/vk-mini-app/tree/main/docs)
 
 
