@@ -18,6 +18,8 @@
 
 [Документы](https://github.com/k3k1488/vk-mini-app/tree/main/docs)
 
+[Постер](http://pd-2021-2.std-1452.ist.mospolytech.ru/poster.png)
+
 
 ## Личный вклад участников
 
