@@ -9,52 +9,49 @@ const Home =  ({go}) => (
 		
 	<Panel id="home">
 		<PanelHeader style={{textAlign:'center'}}
-			left={<PanelHeaderButton onClick={go} data-to='settings'><Icon28SettingsOutline/></PanelHeaderButton>}
-		>
-			Список мест</PanelHeader>		
-		
+			left={<PanelHeaderButton onClick={go} data-to='settings'><Icon28SettingsOutline/></PanelHeaderButton>}>Список мест</PanelHeader>		
 		<Group>
         <CardGrid size="m">
           <ContentCard 
 		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
-		  	subtitle="Type"
-			header="Name"
-			caption="Quick info"
+		  	subtitle="Building"
+			header="Saint Basil's Cathedral"
+			caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales et nulla non dapibus."
 			id="1"
 		  >
           </ContentCard>
 		  <ContentCard 
 		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
-		  	subtitle="Type"
-			header="Name"
-			caption="Quick info"
+		  	subtitle="Building"
+			header="Saint Basil's Cathedral"
+			caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales et nulla non dapibus."
 			id="2"
 		  >
             
           </ContentCard>
 		  <ContentCard 
 		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
-		  	subtitle="Type"
-			header="Name"
-			caption="Quick info"
+		  	subtitle="Building"
+			header="Saint Basil's Cathedral"
+			caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales et nulla non dapibus."
 			id="3"
 		  >
             
           </ContentCard>
 		  <ContentCard 
 		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
-		  	subtitle="Type"
-			header="Name"
-			caption="Quick info"
+		  	subtitle="Building"
+			header="Saint Basil's Cathedral"
+			caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales et nulla non dapibus."
 			id="4"
 		  >
             
           </ContentCard>
 		  <ContentCard 
 		  	image="https://hatrabbits.com/wp-content/uploads/2018/10/risky-assumptions.jpg"
-		  	subtitle="Type"
-			header="Name"
-			caption="Quick info"
+		  	subtitle="Building"
+			header="Saint Basil's Cathedral"
+			caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales et nulla non dapibus."
 			id="5"
 		  >
             
